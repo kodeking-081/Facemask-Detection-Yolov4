@@ -95,20 +95,235 @@ There is high chance that your training might get interrupted due to inactivity 
 *Note: It is not possible to retrieve training chart once training is interrupted. So it is important to save your training logs on a separate folder. Go through logparser.py file inside the darknet/scripts folder to do so. Later you can use matplotlib to generate chart from saved training logs.*
 
 ## Training Chart:
-Darknet itself generates a chart.png for uninterrupted training. But, in my case training got interrupted at 1000 epochs. So, i am uploading training chart at 1000 epoch and a standard training chart i found at [GitHub](https://github.com/MINED30).
+Darknet itself generates a chart.png for uninterrupted training. But, In my case training got interrupted at 1000 epochs. So, I am uploading training chart at 1000 epoch and a standard training chart obtained from [GitHub](https://github.com/MINED30).
 
 <table>
   <tr>
     <td align="center">
       <h3>My Chart</h3>
-      <img src="https://drive.google.com/file/d/1xMn0HTGLSuUzODYSBQ4-sQte6LDW5HfT/view?usp=sharing" width="400" />
+      <img src="https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/chart1000.png" width="400" />
     </td>
     <td align="center">
       <h3>Standard Chart</h3>
-      <img src="https://drive.google.com/file/d/1mxS58WWZJ4NvnFSsGQjjta7hr731Rrst/view?usp=sharing" width="400" />
+      <img src="https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/standardChartyolo.png" width="400" />
     </td>
   </tr>
 </table>
+
+## Evaluation
+
+
+### Average precision:
+* For yolov4-custom_1000.weights:
+
+<table>
+ <thead>
+  <td>class_id</td>
+  <td>class_name</td>
+  <td>TP</td>
+  <td>FP</td>
+  <td>AP</td>
+ </thead>
+ <tbody>
+  <tr>
+   <td>0</td>
+   <td>with_mask</td>
+   <td>163</td>
+   <td>38</td>
+   <td>95.59%</td>
+  </tr>
+  <tr>
+   <td>1</td>
+   <td>without_mask</td>
+   <td>89</td>
+   <td>5</td>
+   <td>99.75%</td>
+  </tr>
+  <tr>
+   <td>2</td>
+   <td>incorrect_mask</td>
+   <td>135</td>
+   <td>42</td>
+   <td>96.69%</td>
+  </tr>
+ </tbody>
+</table>
+
+
+
+* For yolov4-custom_2000.weights:
+  
+<table>
+ <thead>
+  <td>class_id</td>
+  <td>class_name</td>
+  <td>TP</td>
+  <td>FP</td>
+  <td>AP</td>
+ </thead>
+ <tbody>
+  <tr>
+   <td>0</td>
+   <td>with_mask</td>
+   <td>187</td>
+   <td>6</td>
+   <td>99.91%</td>
+  </tr>
+  <tr>
+   <td>1</td>
+   <td>without_mask</td>
+   <td>91</td>
+   <td>2</td>
+   <td>100%</td>
+  </tr>
+  <tr>
+   <td>2</td>
+   <td>incorrect_mask</td>
+   <td>137</td>
+   <td>0</td>
+   <td>100%</td>
+  </tr>
+ </tbody>
+</table>
+
+
+* For yolov4-custom_best.weights:
+  
+*These weights have achieved the best performance based on the evaluation metric*
+
+ <table>
+ <thead>
+  <td>class_id</td>
+  <td>class_name</td>
+  <td>TP</td>
+  <td>FP</td>
+  <td>AP</td>
+ </thead>
+ <tbody>
+  <tr>
+   <td>0</td>
+   <td>with_mask</td>
+   <td>163</td>
+   <td>38</td>
+   <td>95.59%</td>
+  </tr>
+  <tr>
+   <td>1</td>
+   <td>without_mask</td>
+   <td>89</td>
+   <td>5</td>
+   <td>99.75%</td>
+  </tr>
+  <tr>
+   <td>2</td>
+   <td>incorrect_mask</td>
+   <td>135</td>
+   <td>42</td>
+   <td>96.69%</td>
+  </tr>
+ </tbody>
+</table>
+
+
+### F1-score and Average IoU:
+
+<table>
+ <thead>
+  <th>weights</th>
+  <th>precision</th>
+  <th>recall</th>
+  <th>F1-score</th>
+  <th>TP</th>
+  <th>FP</th>
+  <th>FN</th>
+  <th>average IoU</th>
+ </thead>
+ <tbody>
+  <tr>
+   <td>1000</td>
+   <td>0.82</td>
+   <td>0.93</td>
+   <td>0.87</td>
+   <td>387</td>
+   <td>85</td>
+   <td>28</td>
+   <td>61.80%</td>
+   
+  </tr>
+  <tr>
+    <td>2000</td>
+    <td>0.98</td>
+    <td>1.00</td>
+    <td>0.99</td>
+    <td>415</td>
+    <td>8</td>
+    <td>0</td>
+    <td>81.78%</td>
+  </tr>
+  <tr>
+    <td>best</td>
+    <td>0.82</td>
+    <td>0.93</td>
+    <td>0.87</td>
+    <td>387</td>
+    <td>85</td>
+    <td>28</td>
+    <td>61.80%</td>
+  </tr>
+ </tbody>
+</table>
+
+<h3 style="color: #FFFF00;">Mean Average Precision(mAP):</h3>
+
+
+<table>
+  <thead>
+     <tr>
+      <th>Epoch</th>
+      <th>1000</th>
+      <th>2000</th>
+      <th>3000</th>
+      <th>4000</th>
+      <th>5000</th>
+      <th>6000</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mAP Value</td>
+      <td>97.3421%</td>
+      <td>99.9713%</td>
+      <td>99.9866%</td>
+      <td>99.9943%</td>
+      <td>99.9991%</td>
+      <td>99.9981%</td>
+    </tr>
+  </tbody>
+</table>
+
+The mAP values during first 1000 epochs were promising , but after that the model appears to have started overfitting. Due to this reason, I used yolov4-custom_1000 weights for training evaluation metrics and testing purpose.
+
+*Note: I have uploaded the weights file in yolov4/training folder.*
+
+
+# TESTING
+Before testing the model on different inputs, following changes should be made to the yolov4-custom_cfg.file:
+* Change "batch" to 1
+* Change subdivisions to 1
+
+## Run detector on an Image:
+![image](https://github.com/user-attachments/assets/408d830e-f60d-4ea4-ab34-0b6ec4cefea8)
+
+Output:
+
+
+
+
+  
+
+
+
+
 
 
 
