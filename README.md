@@ -307,14 +307,59 @@ The mAP values during first 1000 epochs were promising , but after that the mode
 
 
 # TESTING
-Before testing the model on different inputs, following changes should be made to the yolov4-custom_cfg.file:
+
+Before testing the model on different inputs, we need to define a helper function "imshow.py" to load and display image using opencv and matplotlib.
+Following changes should be made to the yolov4-custom_cfg.file:
 * Change "batch" to 1
 * Change subdivisions to 1
 
 ## Run detector on an Image:
-![image](https://github.com/user-attachments/assets/408d830e-f60d-4ea4-ab34-0b6ec4cefea8)
+Run detector on an image using:
+![image](https://github.com/user-attachments/assets/e1a9d0a3-6783-457d-9e2c-4bd677196e28)
+
 
 Output:
+* Using yolov4-custom_1000.weights:
+
+![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/mewithmask1k.png)
+
+
+* Using yolov4-custom_2000.weights:
+
+![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/withoutmask2k.png)
+
+
+
+
+## Run detector on webcam image:
+
+To test mask detector model on webcam image , use webcamdetect.py.
+
+Output:
+
+* Using yolov4-custom_best.weights:
+
+![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/webcambestweight.png)
+
+
+
+
+## Run detector on Video:
+Use the information on videoDetect.txt for running the detector on video inputs.
+
+Output:
+
+https://github.com/user-attachments/assets/99464508-06e6-4808-b202-23b3169708fd
+
+
+## Run detector on live webcam:
+Source code is available from theAIGuysCode [Github](https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial/blob/master/yolov4_webcam.ipynb)
+*Adjust for your custom YOLOv4 trained weights, config and obj.data files*
+
+Output:
+
+
+
 
 
 
