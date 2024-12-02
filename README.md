@@ -29,6 +29,10 @@ Incase of CPU based training, you will need to install CUDA and cuDNN (for GPU s
 Images were downloaded from various kaggle dataset and compiled into a single folder. So, I have uploaded a zip file containing dataset.The dataset contains 3 classes: with_mask, without_mask and incorrect_mask.
 It consists of 1517, 905 and 1371 images for with_mask class, without_mask and incorrect_mask class respectively.
 
+
+# Model Structure:
+
+
 # GETTING STARTED:
 Get a copy of all the code you require at this colab notebook : https://colab.research.google.com/drive/1kIwNFNqZ3y0sYW3zgav4wu2cPlNZATQQ?usp=sharing
 
