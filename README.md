@@ -1,6 +1,12 @@
 #  Facemask-Detection Using Yolov4:
 
+
+![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/webcambestweight.png)
+
+
 https://github.com/user-attachments/assets/99464508-06e6-4808-b202-23b3169708fd
+
+Original Video: Cottonbro by Pexels.
 
 # Overview
 This project is aimed at building a custom object detector using the YOLO (You Only Look Once) algorithm for precise face mask detection in images. The system can help in ensuring compliance with face mask guidelines at both privata and public places.
@@ -353,10 +359,18 @@ https://github.com/user-attachments/assets/99464508-06e6-4808-b202-23b3169708fd
 
 
 ## Run detector on live webcam:
-Source code is available from theAIGuysCode [Github](https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial/blob/master/yolov4_webcam.ipynb)
+Source code is available from theAIGuysCode [Github](https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial/blob/master/yolov4_webcam.ipynb).
+
 *Adjust for your custom YOLOv4 trained weights, config and obj.data files*
 
 Output:
+
+https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/livewebcam.mp4
+
+
+# Contributing
+
+Contributions are welcome! Please open an issue or create a pull request if you have any suggestions or improvements.
 
 
 
