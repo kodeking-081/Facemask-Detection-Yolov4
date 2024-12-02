@@ -9,13 +9,13 @@ https://github.com/user-attachments/assets/99464508-06e6-4808-b202-23b3169708fd
 Original Video: Cottonbro by Pexels.
 
 # Overview
-This project is aimed at building a custom object detector using the YOLO (You Only Look Once) algorithm for precise face mask detection in images. The system can help in ensuring compliance with face mask guidelines at both privata and public places.
+This project is aimed at building a custom object detector using the YOLO (You Only Look Once) algorithm for precise face mask detection in images, videos and live webcam video. The system can help in ensuring compliance with face mask guidelines at both private and public places.
 
 # Key Features:
 * Utilizes YOLO for real-time object detection.
 * Customizes YOLO for face mask detection.
 * Training on a custom dataset of images with annotations.
-*  High accuracy and efficiency in detecting face masks.
+* High accuracy and efficiency in detecting face masks.
 
 # Dependencies
 To run this project, you will need following dependencies:
@@ -31,6 +31,18 @@ It consists of 1517, 905 and 1371 images for with_mask class, without_mask and i
 
 
 # Model Structure:
+CSPDarknet -53
+
+
+![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/darknet53.jpg)
+
+
+YOLOv4 builds upon its predecessors with several key architectural advancements to improve both performance and efficiency, especially in real-time object detection tasks. YOLOv4 utilizes CSPDarknet53 as its backbone, which is a more efficient version of Darknet53 and introduces Cross-Stage Partial (CSP) connections to enhance gradient flow and reduce redundant computations. This backbone consists of 53 convolutional layers, similar to Darknet53, but with the added benefits of CSP to improve the flow of information between layers. YOLOv4 incorporates skip connections and residual blocks to improve training stability and allow deeper networks without sacrificing performance. Unlike YOLOv3, which suffered from limitations in detecting small objects, YOLOv4 integrates several advanced components such as Spatial Pyramid Pooling (SPP) and Path Aggregation Network (PANet) to enhance feature extraction at multiple scales, significantly improving small object detection. Furthermore, YOLOv4 leverages mosaic data augmentation and self-adversarial training (SAT) to further boost its generalization and robustness to diverse datasets. By combining these elements, YOLOv4 achieves high accuracy and real-time performance, making it one of the most efficient object detection models to date.
+
+
+## Why 161 layers?
+
+YOLOv4's 161 layers were selected to balance computational efficiency and model depth. The CSPDarknet53 backbone (53 layers), the SPP (Spatial Pyramid Pooling) and PANet (Path Aggregation Network) necks, and the detection head are some of the components that make up the network. YOLOv4 can capture more intricate hierarchical features and better multi-scale object representations because to the improved depth, which improves detection accuracy, particularly for small and obscured objects. Real-time object detection depends on improved feature aggregation, which is another benefit of the more layers. To guarantee efficient training without excessive computational cost or overfitting, the design is optimised with residual connections and skip connections, which makes 161 layers the best option for striking a balance between efficiency and performance in real-time settings.
 
 
 # GETTING STARTED:
