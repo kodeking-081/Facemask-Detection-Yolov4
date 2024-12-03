@@ -1,7 +1,7 @@
 #  Facemask-Detection Using Yolov4:
 
 
-![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/webcambestweight.png)
+![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/images/webcambestweight.png)
 
 
 https://github.com/user-attachments/assets/99464508-06e6-4808-b202-23b3169708fd
@@ -34,7 +34,7 @@ It consists of 1517, 905 and 1371 images for with_mask class, without_mask and i
 CSPDarknet -53
 
 
-![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/darknet53.jpg)
+![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/images/darknet53.jpg)
 
 
 YOLOv4 builds upon its predecessors with several key architectural advancements to improve both performance and efficiency, especially in real-time object detection tasks. YOLOv4 utilizes CSPDarknet53 as its backbone, which is a more efficient version of Darknet53 and introduces Cross-Stage Partial (CSP) connections to enhance gradient flow and reduce redundant computations. This backbone consists of 53 convolutional layers, similar to Darknet53, but with the added benefits of CSP to improve the flow of information between layers. YOLOv4 incorporates skip connections and residual blocks to improve training stability and allow deeper networks without sacrificing performance. Unlike YOLOv3, which suffered from limitations in detecting small objects, YOLOv4 integrates several advanced components such as Spatial Pyramid Pooling (SPP) and Path Aggregation Network (PANet) to enhance feature extraction at multiple scales, significantly improving small object detection. Furthermore, YOLOv4 leverages mosaic data augmentation and self-adversarial training (SAT) to further boost its generalization and robustness to diverse datasets. By combining these elements, YOLOv4 achieves high accuracy and real-time performance, making it one of the most efficient object detection models to date.
@@ -123,11 +123,11 @@ Darknet itself generates a chart.png for uninterrupted training. But, In my case
   <tr>
     <td align="center">
       <h3>My Chart</h3>
-      <img src="https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/chart1000.png" width="400" />
+      <img src="https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/images/chart1000.png" width="400" />
     </td>
     <td align="center">
       <h3>Standard Chart</h3>
-      <img src="https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/standardChartyolo.png" width="400" />
+      <img src="https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/images/standardChartyolo.png" width="400" />
     </td>
   </tr>
 </table>
@@ -361,7 +361,7 @@ Output:
 
 * Using yolov4-custom_best.weights:
 
-![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/webcambestweight.png)
+![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/images/webcambestweight.png)
 
 
 
@@ -381,7 +381,7 @@ Source code is available from theAIGuysCode [Github](https://github.com/theAIGuy
 
 Output:
 
-https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/livewebcam.mp4
+https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/images/livewebcam.mp4
 
 
 # Contributing
