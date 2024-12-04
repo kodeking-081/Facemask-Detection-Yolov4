@@ -343,12 +343,12 @@ Run detector on an image using:
 Output:
 * Using yolov4-custom_1000.weights:
 
-![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/mewithmask1k.png)
+![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/images/mewithmask1k.png)
 
 
 * Using yolov4-custom_2000.weights:
 
-![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/withoutmask2k.png)
+![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/images/withoutmask2k.png)
 
 
 
