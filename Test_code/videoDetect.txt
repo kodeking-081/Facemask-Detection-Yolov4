@@ -1,0 +1,8 @@
+# run your custom detector on a video with this command (upload a video to your google drive to test, the thresh flag sets the minimum accuracy required for object detection).This saves the output video with the detections in your output path
+
+!./darknet detector demo data/obj.data cfg/yolov4-custom.cfg /mydrive/yolov4/training/yolov4-custom_1000.weights -dont_show /mydrive/Test/trial.mp4 -i 0 -out_filename /mydrive/Test/trialresult.avi
+
+
+Input videos are taken from a folder named "Test" on google drive and the output videos are saved to the same folder.
+input: mydrive/Test/trial.mp4
+output: mydrive/Test/trialresult.avi
