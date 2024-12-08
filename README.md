@@ -23,6 +23,7 @@ To run this project, you will need following dependencies:
 * Darknet (YOLO)
 * Python 3
 * Google Colab( for GPU usage)
+
 Incase of CPU based training, you will need to install CUDA and cuDNN (for GPU support) on your device and create a darknet architechture on your CPU.
 
 # Dataset
