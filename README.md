@@ -52,7 +52,8 @@ Get a copy of all the code you require at this colab notebook : https://colab.re
 First create a yolov4 folder on your google drive and within that folder, create a subfolder "training".This "training" folder will later contain our weights file obtained while training our mask-detector model.
 
 ## 2.Clone the darknet repository:
-You can clone the repository from official AlexeyAB github account using "!git clone https://github.com/AlexeyAB/darknet".
+You can clone the repository from official AlexeyAB github account using
+"!git clone https://github.com/AlexeyAB/darknet".
 
 ## 3.Upload the required files:
 You can get all the files at my [GitHub](https://github.com/kodeking-081). Here is the list of files you should upload within your yolov4 folder:
