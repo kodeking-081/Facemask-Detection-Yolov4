@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Mask Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Face Mask Detection</h1>
+
+    <!-- Live Webcam Feed -->
+    <h2>Live Detection</h2>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+
+    <!-- Image Upload -->
+    <h2>Upload an Image</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Upload & Detect</button>
+    </form>
+
+    {% if uploaded_image %}
+    <h2>Detected Image</h2>
+    <img src="{{ uploaded_image }}" width="640">
+    {% endif %}
+</body>
+</html>
