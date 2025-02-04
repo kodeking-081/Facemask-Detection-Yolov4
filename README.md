@@ -337,6 +337,9 @@ Following changes should be made to the yolov4-custom_cfg.file:
 * Change "batch" to 1
 * Change subdivisions to 1
 
+A simple Flask based UI is dseigned to test the model:
+![image](https://github.com/kodeking-081/Facemask-Detection-Yolov4/blob/main/images/Screenshot%202025-02-04%20173731.png)
+
 ## Run detector on an Image:
 Run detector on an image using:
 ![image](https://github.com/user-attachments/assets/e1a9d0a3-6783-457d-9e2c-4bd677196e28)
