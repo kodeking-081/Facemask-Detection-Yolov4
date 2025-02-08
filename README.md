@@ -9,7 +9,7 @@ https://github.com/user-attachments/assets/99464508-06e6-4808-b202-23b3169708fd
 Original Video: Cottonbro by Pexels.
 
 # Overview
-This project is aimed at building a custom object detector using the YOLO (You Only Look Once) algorithm for precise face mask detection in images, videos and live webcam video. The system can help in ensuring compliance with face mask guidelines at both private and public places.
+It is a deep learning project utilizing the YOLOv4 object detection algorithm to train a detection model for precise face mask detection in images, videos and live webcam video. Transfer learning is applied by using a pretrained convolutional neural network (CNN) as the base network for YOLOv4. The model is then configured for training on a new dataset by specifying anchor boxes and defining new object classes. The system can help in ensuring compliance with face mask guidelines at both private and public places.
 
 # Key Features:
 * Utilizes YOLO for real-time object detection.
